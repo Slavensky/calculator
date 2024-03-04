@@ -1,0 +1,64 @@
+body * {
+    border: solid 1px black;
+    margin: 0;
+}
+
+body {
+    width: 500px;
+    height: 600px;
+}
+
+.content {
+    background-color: grey;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content * {
+    height: 20%;
+}
+
+.display {
+    padding: 0;
+}
+
+.display > p {
+    height: 100%;
+    text-align: right;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+}
+
+.center-left {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.center-left > button {
+    flex: 1 1 auto;
+    min-width: 33%;
+    height: 33.3%;
+}
+
+.center-right {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.center-right > button {
+    width: 100%;
+    flex: 1 1 auto;
+    background-color: orange;
+    font-size: 25px;
+}
