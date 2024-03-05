@@ -22,6 +22,8 @@ numberButtons.forEach((button) => {
         let value = display.textContent;
         if (value === "0") {
             value = button.textContent;
+        } else if (firstValue !== undefined && operator !== "") {
+            value = button.textContent;
         } else {
             value += button.textContent;
         }
@@ -35,6 +37,9 @@ operatorButtons.forEach((operatorButton) => {
         let value = display.textContent;
         if (firstValue === undefined) {
             firstValue = value;
+        } else if (firstValue !== undefined) {
+            firstValue = operate(firstValue, value, operator);
+            console.log(firstValue);
         }
 
         operator = operatorButton.textContent;
