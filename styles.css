@@ -1,6 +1,7 @@
 body * {
     border: solid 1px black;
     margin: 0;
+    font-size: 35px;
 }
 
 body {
@@ -24,9 +25,20 @@ body {
     padding: 0;
 }
 
-.display > p {
-    height: 100%;
+.display-screen {
+    height: 80%;
+    margin-top: 10px;
+    padding-right: 10px;
+    background-color: rgb(193, 162, 162);
+    display: flex;
+    justify-content: right;
+}
+
+.display-screen > p {
     text-align: right;
+    font-size: 50px;
+    padding: 20px;
+    border: none;
 }
 
 .center {
@@ -60,5 +72,13 @@ body {
     width: 100%;
     flex: 1 1 auto;
     background-color: orange;
-    font-size: 25px;
+}
+
+.bottom {
+    display: flex;
+}
+
+.bottom > button {
+    flex: 1 1 auto;
+    height: 100%;
 }
